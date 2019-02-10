@@ -4,7 +4,7 @@ import javax.swing.JTextField;
 
 public class Main {
 	public static void main(String[] args) {
-		JFrame window = new Frame(400,100);
+		JFrame window = new Frame(320,100);
 		window.setVisible(true);
 	}
 

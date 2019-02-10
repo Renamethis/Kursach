@@ -1,7 +1,9 @@
 import java.awt.BorderLayout;
+import java.awt.CardLayout;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -11,6 +13,8 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class Frame extends JFrame{
+
+	private static final long serialVersionUID = 1L;
 	JButton but;
 	JTextField CHPZ,CHFZ;
 	JLabel l1;
