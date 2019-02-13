@@ -1,26 +1,18 @@
-import java.awt.BorderLayout;
-import java.awt.CardLayout;
 import java.awt.Color;
-import java.awt.Component;
-import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.Font;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableCellRenderer;
-import javax.swing.table.TableCellRenderer;
 
 public class Frame extends JFrame{
 
@@ -30,6 +22,7 @@ public class Frame extends JFrame{
 	JLabel l1;
 	FlowLayout lay;
 	JTable j;
+	JCheckBox[] jcb;
 	int bite;
 	Frame(int w, int h, int bit) {
 		this.bite = bit;
@@ -40,7 +33,8 @@ public class Frame extends JFrame{
 		l1 = new JLabel("Представление в ЭВМ:");
 		j = new JTable(1,bite);
 		j.setEnabled(false);
-		for(int i = 0; i < 16; i++)
+		jcb = new JCheckBox[3];
+		for(int i = 0; i < bit; i++)
 			j.getColumnModel().getColumn(i).setPreferredWidth(5);
 		CHPZ.setPreferredSize(new Dimension(100,30));
 		CHFZ.setPreferredSize(new Dimension(100,30));

@@ -1,11 +1,8 @@
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JTextField;
 
-public class Main {
+public class Main { 
 	public static void main(String[] args) {
-		JFrame window = new Frame(360,200, 16);
+		JFrame window = new Frame(320,200, 16);
 		window.setVisible(true);
 	}
-
 }
